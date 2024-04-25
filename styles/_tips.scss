@@ -1,0 +1,29 @@
+.tips {
+    gap: 32px;
+}
+.tip {
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    gap: 24px;
+    border-radius: 8px;
+    background-color: rgba(151, 202, 209, 0.08);
+}
+.tip img {
+    cursor: pointer;
+}
+.tip-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media (max-width: 992px) {
+    .tips {
+        flex-direction: column;
+    }
+    .city:nth-child(n+5) {
+        display: none;
+      }
+}

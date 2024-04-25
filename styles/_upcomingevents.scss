@@ -1,0 +1,13 @@
+@use 'vars';
+@use 'reset';
+@use 'eventsnear';
+
+.upcoming-events {
+    @extend %block;
+    gap: 28px;
+}
+
+
+    
+    
+    

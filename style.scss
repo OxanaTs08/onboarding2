@@ -1,0 +1,30 @@
+@use './styles/vars';
+@use './styles/reset';
+@use './styles/container';
+@use './styles/header';
+@use './styles/introduction';
+
+@use './styles/eventsnear';
+@use './styles/upcomingevents';
+@use './styles/joinmeetup';
+@use './styles/cities';
+@use './styles/explorecategories';
+@use './styles/friendship';
+@use './styles/tips';
+
+
+
+
+
+
+// @mixin naked-btn($color, $isBorder) {
+//         font-size: 20px;
+//         justify-content: center;
+//         @if $isBorder {
+//             border: 2px solid $main-color;
+//         }
+//     }
+// .primary-button {
+//             @include naked-btn($main-color, false);
+//             color: #fff;
+//         }

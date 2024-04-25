@@ -1,0 +1,23 @@
+.friendship-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.article{
+    width: 100%;
+}
+.pale-text{
+    color: rgba(112, 112, 112, 1);
+}
+@media (max-width: 1220px) {
+    .friendship-articles {
+        flex-direction: column;
+        width: 100%;
+    }
+}

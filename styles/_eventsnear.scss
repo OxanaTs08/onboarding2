@@ -1,0 +1,105 @@
+@use 'vars';
+@use 'reset';
+
+.events-near {
+    @extend %block;
+    gap: 28px;
+    .top {
+        @extend %flexrspace;
+        .events-near--top--left {
+            @extend %flexrspace;
+            gap: 22px;
+            h2 {
+                @extend %fonth2;
+            }
+            .your-area {
+                padding: 8px 12px;
+                height: 44px;
+                background-color: rgba(151, 202, 209, 0.12);
+                border-radius: $mainradius;
+                @extend %flexr;
+                gap: 8px;
+                p {
+                    @extend %notstandart;
+                    color: $maincolor;
+                }
+            }
+        }
+        .events-link{
+            @extend %links;
+            color: #00798A;
+        }
+    }
+    .list-of-events {
+        @extend %gridevent;
+        overflow: hidden;
+        .event {
+            // width: calc((100%-24px) / 4);
+            .event-top{
+                // overflow: hidden;
+                
+                img {
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+            @extend %flexcstart;
+            gap: 8px;
+            cursor: pointer;
+            
+            .event-bottom {
+                @extend %flexcstart;
+                gap: 8px;
+                .bottom-line {
+                    @extend %flexraw;
+                    gap: 6px;
+                }
+                h3 {
+                    @extend %notstandart;
+                }
+                p {
+                    @extend %btnfont;
+                }
+                .small {
+                    color: $palecolor
+                }
+            }
+            .time {
+                @extend %flexraw;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        // .event:nth-child(n+8) {
+        //     display: none;
+        //   }
+        
+    }
+}
+@media (max-width: 1220px) {
+    .list-of-events {
+       @extend %flexcstart;
+        gap: 10px;
+        .events-link {
+            display: none;
+        }
+        .event {
+            @extend %flexraw;
+            padding-top: 10px;
+            border-top: 0.61px solid rgba(217, 217, 217, 1);
+            .event-bottom {
+                .time {
+                    color: rgba(124, 111, 80, 1);
+                    font-weight: 500;
+                    order: -3;
+                }
+            }
+        }
+        .event:nth-child(n+4) {
+            display: none;
+          }
+    }
+    
+}   

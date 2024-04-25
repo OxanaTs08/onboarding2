@@ -1,0 +1,49 @@
+@use 'vars';
+@use 'reset';
+
+.introduction {
+    padding-top: 71px;
+    padding-bottom: 98px;
+    @extend %block;
+    @extend %flexr;
+    gap: 55px;
+    .introduction-text {
+        width: calc((100% - 24px) / 2);
+        @extend %flexcstart;
+        gap: 24px;
+        h1 {
+            @extend %fonth1;
+        }
+        p {
+            @extend %fontp;
+        }
+        a {
+            text-decoration: none
+        }
+        .btn--primary {
+            @extend %btn;
+            background-color: #00798A;
+        }
+        .btn--primary:hover {
+            @extend %hover;
+        }
+        .btn--primary:active {
+            @extend %active;
+        }
+    }
+ }
+ @media (max-width: 960px) {
+    .introduction {
+    flex-direction: column;
+    gap: 10px;
+    }
+    .introduction-text {
+        width: 100%;
+        .btn--primary {
+            display: none;
+        }
+    }
+}
+ 
+
+ 
